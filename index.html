@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <title>For You, Janani ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
+  <main class="card">
+    <div class="small">A little something...</div>
+
+    <div class="heart" aria-hidden="true">♥</div>
+
+    <h1>For You, <span>Janani</span> ❤️</h1>
+    <p class="message">
+      Some songs are just songs...<br>
+      and some songs make you think of someone. 🫣
+    </p>
+
+    <div class="player">
+      <div class="disc" id="disc">
+        <div class="disc-center">♥</div>
+      </div>
+
+      <div class="song-info">
+        <div class="song-title">For You</div>
+        <div class="song-subtitle">Just press play... 🎧</div>
+      </div>
+
+      <button class="play-btn" id="playBtn" aria-label="Play song">
+        <span id="playIcon">▶</span>
+      </button>
+    </div>
+
+    <div class="progress-wrap">
+      <span id="current">0:00</span>
+      <input id="progress" type="range" min="0" max="100" value="0" aria-label="Song progress">
+      <span id="duration">0:00</span>
+    </div>
+
+    <audio id="audio" preload="metadata">
+      <source src="For%20you.mp3" type="audio/mpeg">
+      Your browser does not support audio.
+    </audio>
+
+    <button class="love-btn" id="loveBtn">Tap if you smiled 🤭 ❤️</button>
+
+    <p class="footer">Made with a little courage & a lot of feelings. ✨</p>
+  </main>
+
+  <div id="hearts" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
